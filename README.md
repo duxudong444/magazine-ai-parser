@@ -7,6 +7,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
+![Project Screenshot](./docs/app-home.png)
+
 它可以完成这些事情：
 
 - 上传英文杂志 PDF
@@ -150,15 +152,15 @@ npm run lint
 
 ## 配置项
 
-| 变量名 | 说明 | 默认值 |
-| --- | --- | --- |
-| `PORT` | 本地服务端口 | `3000` |
-| `VITE_AI_PROVIDER` | 默认模型提供商 | `gemini` |
-| `VITE_GEMINI_API_KEY` | Gemini API Key | 空 |
-| `VITE_GEMINI_MODEL` | Gemini 模型名 | `gemini-3-flash-preview` |
-| `VITE_DEEPSEEK_API_KEY` | DeepSeek API Key | 空 |
-| `VITE_DEEPSEEK_MODEL` | DeepSeek 模型名 | `deepseek-chat` |
-| `VITE_GLOBAL_PROMPT` | 自定义全局提示词 | 空 |
+| 变量名                     | 说明               | 默认值                      |
+| ----------------------- | ---------------- | ------------------------ |
+| `PORT`                  | 本地服务端口           | `3000`                   |
+| `VITE_AI_PROVIDER`      | 默认模型提供商          | `gemini`                 |
+| `VITE_GEMINI_API_KEY`   | Gemini API Key   | 空                        |
+| `VITE_GEMINI_MODEL`     | Gemini 模型名       | `gemini-3-flash-preview` |
+| `VITE_DEEPSEEK_API_KEY` | DeepSeek API Key | 空                        |
+| `VITE_DEEPSEEK_MODEL`   | DeepSeek 模型名     | `deepseek-chat`          |
+| `VITE_GLOBAL_PROMPT`    | 自定义全局提示词         | 空                        |
 
 ## 工作流程
 
