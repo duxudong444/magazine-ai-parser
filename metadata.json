@@ -1,0 +1,5 @@
+{
+  "name": "Magazine-to-MD",
+  "description": "基于 LLM 的杂志 PDF 自动化深度解析系统",
+  "requestFramePermissions": []
+}
