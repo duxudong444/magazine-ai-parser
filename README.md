@@ -2,6 +2,11 @@
 
 一个本地运行的英文杂志 PDF 解析工具。
 
+[![Node.js](https://img.shields.io/badge/Node.js-22%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 它可以完成这些事情：
 
 - 上传英文杂志 PDF
@@ -16,6 +21,16 @@
 - 批量整理杂志文章
 - 做中英对照学习材料
 - 将杂志内容转成 Markdown 继续编辑
+
+## 快速开始
+
+```bash
+npm install
+copy .env.example .env.local
+npm run dev
+```
+
+然后打开 [http://localhost:3000](http://localhost:3000)。
 
 ## 功能特性
 
@@ -97,6 +112,16 @@ npm run dev
 
 [http://localhost:3000](http://localhost:3000)
 
+### 5. 构建产物
+
+如果你只需要构建前端静态资源：
+
+```bash
+npm run build
+```
+
+构建结果会输出到 `dist/` 目录。
+
 ## 使用说明
 
 1. 启动项目并打开网页
@@ -122,6 +147,18 @@ npm run lint
 - `npm run start`：直接启动服务端入口
 - `npm run build`：构建前端静态资源
 - `npm run lint`：执行 TypeScript 类型检查
+
+## 配置项
+
+| 变量名 | 说明 | 默认值 |
+| --- | --- | --- |
+| `PORT` | 本地服务端口 | `3000` |
+| `VITE_AI_PROVIDER` | 默认模型提供商 | `gemini` |
+| `VITE_GEMINI_API_KEY` | Gemini API Key | 空 |
+| `VITE_GEMINI_MODEL` | Gemini 模型名 | `gemini-3-flash-preview` |
+| `VITE_DEEPSEEK_API_KEY` | DeepSeek API Key | 空 |
+| `VITE_DEEPSEEK_MODEL` | DeepSeek 模型名 | `deepseek-chat` |
+| `VITE_GLOBAL_PROMPT` | 自定义全局提示词 | 空 |
 
 ## 工作流程
 
@@ -161,4 +198,4 @@ npm run lint
 
 ## License
 
-MIT
+[MIT](./LICENSE)
